@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancasFacil", "FinancasFacil\FinancasFacil.csproj", "{2FA03B00-AB23-4AE1-84E6-D85345EC7906}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancasFacil", "FinancasFacil\FinancasFacil.csproj", "{2FA03B00-AB23-4AE1-84E6-D85345EC7906}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integracao", "Integracao\Integracao.csproj", "{714CA225-69D7-4359-80EA-6CBFA555488D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integracao", "Integracao\Integracao.csproj", "{714CA225-69D7-4359-80EA-6CBFA555488D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{1F6D8BBD-AE35-4016-84FA-015FE123E4C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dominio", "Dominio\Dominio.csproj", "{1F6D8BBD-AE35-4016-84FA-015FE123E4C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servicos", "Servicos\Servicos.csproj", "{BCFA1546-61B0-425A-9E27-B1840BCD2556}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{1F6D8BBD-AE35-4016-84FA-015FE123E4C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F6D8BBD-AE35-4016-84FA-015FE123E4C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F6D8BBD-AE35-4016-84FA-015FE123E4C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCFA1546-61B0-425A-9E27-B1840BCD2556}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCFA1546-61B0-425A-9E27-B1840BCD2556}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCFA1546-61B0-425A-9E27-B1840BCD2556}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCFA1546-61B0-425A-9E27-B1840BCD2556}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

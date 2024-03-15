@@ -1,5 +1,4 @@
-﻿
-using Dominio;
+﻿using Dominio.Entidades;
 
 namespace FinancasFacil
 {
