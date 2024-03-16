@@ -13,7 +13,7 @@ namespace FinancasFacil
 
         private void OnCounterClicked(object sender, EventArgs e)
         {
-            Acao acao = _client.GetShare("PETR4");
+            //Acao acao = _client.GetShare("PETR4");
             count++;
 
             if (count == 1)

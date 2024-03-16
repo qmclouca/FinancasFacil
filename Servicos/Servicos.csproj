@@ -24,8 +24,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Dominio\Dominio.csproj" />
-	  <ProjectReference Include="..\Integracao\Integracao.csproj" />
+	  <!--<ProjectReference Include="..\Dominio\Dominio.csproj" />
+	  <ProjectReference Include="..\Integracao\Integracao.csproj" />-->
 	</ItemGroup>
 
 </Project>

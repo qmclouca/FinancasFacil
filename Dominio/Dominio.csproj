@@ -25,7 +25,7 @@
 	</ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Integragracao\Integracao.csproj" />
+    <!--<ProjectReference Include="..\Integracao\Integracao.csproj" />-->
   </ItemGroup>
 
 </Project>
