@@ -1,8 +1,8 @@
 ﻿using Newtonsoft.Json;
 
-namespace Dominio
+namespace Dominio.Entidades
 {
-     public class Acao
+    public class Acao
     {
         [JsonProperty("symbol")]
         public string Symbol { get; set; }

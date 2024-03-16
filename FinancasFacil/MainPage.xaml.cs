@@ -1,6 +1,5 @@
-﻿
-using Dominio;
-
+﻿using Dominio.Entidades;
+using Integracao;
 namespace FinancasFacil
 {
     public partial class MainPage : ContentPage
@@ -12,17 +11,13 @@ namespace FinancasFacil
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private void CliqueBuscarInformacoes(object sender, EventArgs e)
         {
-            Acao acao = _client.GetShare("PETR4");
-            count++;
+            string simboloAcao = campoSimbolo.Text;
+            
+            dynamic acao = _client.GetShare(simboloAcao);
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            SemanticScreenReader.Announce(BuscarInformacoes.Text);
         }
     }
 
