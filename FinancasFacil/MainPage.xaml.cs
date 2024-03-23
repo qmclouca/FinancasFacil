@@ -1,5 +1,6 @@
 ﻿using Dominio.Entidades;
 using Integracao;
+using Newtonsoft.Json;
 namespace FinancasFacil
 {
     public partial class MainPage : ContentPage
@@ -11,11 +12,15 @@ namespace FinancasFacil
             InitializeComponent();
         }
 
-        private void CliqueBuscarInformacoes(object sender, EventArgs e)
+        private async void CliqueBuscarInformacoes(object sender, EventArgs e)
         {
             string simboloAcao = campoSimbolo.Text;
             
-            dynamic acao = _client.GetShare(simboloAcao);
+            HttpResponseMessage respostaAPI = await _client.GetShare(simboloAcao);
+            string conteudo = await respostaAPI.Content.ReadAsStringAsync();
+            Acao acao = JsonConvert.DeserializeObject<Acao>(conteudo);
+
+            BuscarInformacoes.Text = $"{acao.ShortName} Valor: {acao.RegularMarketPrice}";
 
             SemanticScreenReader.Announce(BuscarInformacoes.Text);
         }
