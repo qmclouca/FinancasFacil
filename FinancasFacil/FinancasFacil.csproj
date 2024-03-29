@@ -67,4 +67,10 @@
 	  <ProjectReference Include="..\Integracao\Integracao.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <MauiXaml Update="ShareDetails.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>
